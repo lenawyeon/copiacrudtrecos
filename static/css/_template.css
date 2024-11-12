@@ -8,19 +8,19 @@
     --font-size: 16px;
 
     /* Cor de fundo do site */
-    --background-color: rgb(23, 64, 92);
+    --background-color: #ffea01;
 
     /* Cor 1 do tema */
-    --primary-color: steelblue;
+    --primary-color: rgb(0, 0, 0);
 
     /* Cor 2 do tema */
-    --secondary-color: orange;
+    --secondary-color: rgb(0, 0, 0);
 
     /* Cor 3 do tema */
-    --tertiary-color: orangered;
+    --tertiary-color: rgb(123, 123, 123); /* sombra do faça login * /
 
     /* Cor de fundo das caixas*/
-    --box-background-color: white;
+    --box-background-color: rgb(255, 255, 255);
 
     /* Definição do logotipo */
     --logo-border: .8px black;
@@ -101,13 +101,13 @@ button {
     font-size: 3rem;
     color: var(--secondary-color);
     -webkit-text-stroke: var(--logo-border);
-    text-shadow: 2px 2px 5px grey;
+    text-shadow: 2px 2px 5px #ffea01; /* sombra no ícone */
 }
 
 #wrap>header h1 {
     color: var(--primary-color);
     margin: 0;
-    text-shadow: 2px 2px 5px grey;
+    text-shadow: 2px 2px 5px #ffea01;
 }
 
 #wrap>nav {
@@ -204,7 +204,7 @@ button {
 /***************/
 
 .field-help {
-    color: orange;
+    color: rgb(0, 0, 0);
     font-size: small;
     cursor: pointer;
 }
@@ -230,7 +230,7 @@ button {
 #wrap>main form input,
 #wrap>main form textarea {
     width: 100%;
-    border: 1px solid red;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 #wrap>main form textarea {
@@ -239,7 +239,7 @@ button {
 
 #wrap>main form button[type=submit] {
     border: none;
-    background-color: grey;
+    background-color: rgb(0, 0, 0);
     color: white;
     cursor: pointer;
     pointer-events: none;
@@ -247,11 +247,11 @@ button {
 
 #wrap>main form input:valid,
 #wrap>main form textarea:valid {
-    border: 1px solid blue;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 #wrap>main form:valid button[type=submit] {
-    background-color: steelblue;
+    background-color: rgb(0, 0, 0);
     pointer-events: all;
 }
 
@@ -287,7 +287,7 @@ button {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
-    background-color: rgb(255, 245, 226);
+    background-color: #ffea01;
 }
 
 .item img {
@@ -350,11 +350,11 @@ button {
 }
 
 .btnProfile {
-    background-color: steelblue;
+    background-color: rgb(0, 0, 0);
 }
 
 .btnLogout {
-    background-color: orange;
+    background-color: rgb(0, 0, 0);
 }
 
 .btnSignout {

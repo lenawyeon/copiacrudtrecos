@@ -4,7 +4,7 @@
 {# Bloco com conteúdo desta página #}
 {% block conteudo %}
 
-<h2>Lista de Trecos</h2>
+<h2>Lista de álbuns</h2>
 
 <div class="lista">
 
@@ -18,6 +18,9 @@
             </a>
             <a class="flutua-icone" href="/edita/{{ treco.t_id }}" title="Editar {{ treco.t_nome }}.">
                 <i class="fa-solid fa-pen-to-square fa-fw"></i>
+            </a>
+            <a class="flutua-icone" href="/favorito/{{ treco.t_id }}" title="Favorito {{ treco.t_nome }}.">
+                <i class="fa-regular fa-heart"></i>
             </a>
             <h4>{{ treco.t_nome }}</h4>
             {{ treco.t_descricao }}
@@ -33,7 +36,7 @@
 
 <dialog id="myDialog">
     <h4>Oba!</h4>
-    <p>Seu treco foi apagado com sucesso!</p>
+    <p>Seu álbum foi apagado com sucesso!</p>
     <form method="dialog">
         <button onclick="window.history.pushState({}, '', '/')">OK</button>
     </form>
@@ -46,7 +49,7 @@
 
 <dialog id="myDialog">
     <h4>Oba!</h4>
-    <p>Seu treco foi editado com sucesso!</p>
+    <p>Seu álbum foi editado com sucesso!</p>
     <form method="dialog">
         <button onclick="window.history.pushState({}, '', '/')">OK</button>
     </form>
